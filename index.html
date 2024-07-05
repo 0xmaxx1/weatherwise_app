@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiiper File -->
+    <link rel="stylesheet" href="./CSS/swiper-bundle.min.css" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <!-- Style File -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- media Query File -->
+    <link rel="stylesheet" href="./CSS/media.css" />
+    <title>WeatherWise</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="d-flex">
+        <div class="logo d-flex p-2">
+          <i
+            class="fa-solid fa-cloud fa-fade"
+            style="color: hsl(255, 100%, 73%)"
+          ></i>
+          <h3>weatherwise</h3>
+        </div>
+        <div class="inputSearch" id="searchcity">
+          <div class="search position-relative">
+            <i class="fa-solid searchicon fa-arrow-left d-none" id="arrow"></i>
+            <i
+              class="fa-solid searchicon fa-magnifying-glass"
+              id="searchiconcity"
+            ></i>
+            <input
+              class="searchInput"
+              type="search"
+              id="searchInput"
+              placeholder="search city..."
+              autocomplete="off"
+            />
+            <p id="errorMessage" class="d-none">
+            </p>
+          </div>
+        </div>
+        <div class="header-action d-flex align-items-center">
+          <i
+            class="fa-solid searchico rounded-circle fa-magnifying-glass"
+            id="iconSearch"
+          ></i>
+          <button class="rounded-pill location" id="location">
+            <i class="fa-solid fa-location-crosshairs location-icon"></i>
+            <span class="text-loc"> Current Location </span>
+          </button>
+        </div>
+      </header>
+      <!--  -->
+      <main>
+        <div class="content">
+          <div class="content-left">
+            <aside class="tempDisplay" id="tempDisplay"></aside>
+            <aside class="forecast" id="forecast">
+              <h3>3 Days Forecast</h3>
+              <div class="days d-flex flex-column" id="days"></div>
+            </aside>
+          </div>
+          <div class="content-right">
+            <section class="hightlightss" id="highlightSection"></section>
+            <section class="todays" id="todays"></section>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- page Loading -->
+    <div class="loading position-fixed d-none" id="loading">
+      <div class="wraploading">
+        <h4>Please wait for WeatherWise to load</h4>
+        <span class="loader"></span>
+      </div>
+    </div>
+    <div class="img-logo">
+      <img src="./img/loooo.png" alt="logo" />
+    </div>
+    <!-- Swipper File  -->
+    <script src="./JS/swiper-bundle.min.js"></script>
+    <!-- Bootstrap File  -->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <!-- JS File -->
+    <script src="./JS/index.js"></script>
+  </body>
+</html>
